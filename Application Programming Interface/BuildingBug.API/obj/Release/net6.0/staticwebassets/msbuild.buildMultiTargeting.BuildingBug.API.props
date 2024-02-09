@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\BuildingBug.API.props" />
+</Project>

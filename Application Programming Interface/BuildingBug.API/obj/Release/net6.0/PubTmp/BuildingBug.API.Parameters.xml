@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="BuildingBugAPI" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\luisg\\Desktop\\IPCA\\3º\ Ano\\1º\ Semestre\\Projeto\ Aplicado\\repos\\BuildingBug\\Application\ Programming\ Interface\\BuildingBug\.API\\obj\\Release\\net6\.0\\PubTmp\\Out\\$" />
+  </parameter>
+</parameters>

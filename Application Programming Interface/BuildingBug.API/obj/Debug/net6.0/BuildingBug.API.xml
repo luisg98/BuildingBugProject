@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BuildingBug.API</name>
+    </assembly>
+    <members>
+        <member name="M:BuildingBug.API.Controllers.ClienteController.GetClienteLogin(BuildingBug.API.Data.Contracts.Clientes.ClienteLoginRequestContract)">
+            <summary>
+            Logar um cliente.
+            </summary>
+            <returns>Token</returns>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.ClienteController.CreateCliente(BuildingBug.API.Data.Contracts.Clientes.CreateClienteRequestContract)">
+            <summary>
+            Criar um cliente.
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.ClienteController.UpdateCliente(BuildingBug.API.Data.Contracts.Clientes.UpdateClienteRequestContract)">
+            <summary>
+            Atualizar um cliente.
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.ClienteController.DeleteCliente(System.Int32)">
+            <summary>
+            Eliminar um cliente.
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.ClienteController.GetCliente(System.Int32)">
+            <summary>
+            Obter um cliente.
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.ClienteController.GetAllClientes">
+            <summary>
+            Obter todos os clientes.
+            </summary>
+            <returns>lista de clientes</returns>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.CodigoPostalController.CreateCodigoPostal(BuildingBug.API.Data.Contracts.CodigosPostais.CreateCodigoPostalRequestContract)">
+            <summary>
+            Criar um código postal
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.CodigoPostalController.UpdateCodigoPostal(BuildingBug.API.Data.Contracts.CodigosPostais.UpdateCodigoPostalRequestContract)">
+            <summary>
+            Atualizar um código postal
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.CodigoPostalController.DeleteCodigoPostal(System.Int32)">
+            <summary>
+            Eliminar um código postal
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.DeslocacaoController.CreateDeslocacao(BuildingBug.API.Data.Contracts.Deslocacoes.CreateDeslocacaoRequestContract)">
+            <summary>
+            Marcar uma Deslocação
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.DeslocacaoController.UpdateDeslocacao(BuildingBug.API.Data.Contracts.Deslocacoes.UpdateDeslocacaoRequestContract)">
+            <summary>
+            Atualizar uma deslocação
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.DeslocacaoController.DeleteDeslocacao(System.Int32)">
+            <summary>
+            Eliminar uma deslocação
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.DeslocacaoController.GetDeslocacao(System.Int32)">
+            <summary>
+            Obter uma deslocação
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.DeslocacaoController.GetAllDeslocacoes">
+            <summary>
+            Obter todas as deslocações
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.EstadoServicoController.CreateEstadoServico(BuildingBug.API.Data.Contracts.EstadoServico.CreateEstadoServicoRequestContract)">
+            <summary>
+            Criar um estado de serviço
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.EstadoServicoController.UpdateEstadoServico(BuildingBug.API.Data.Contracts.EstadoServico.UpdateEstadoServicoRequestContract)">
+            <summary>
+            Atualizar um estado de serviço
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.EstadoServicoController.DeleteEstadoServico(System.Int32)">
+            <summary>
+            Eliminar um estado de serviço
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.EstadoServicoController.GetEstadoServico(System.Int32)">
+            <summary>
+            Obter o estado de serviço
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.EstadoServicoController.GetAllEstadosServicos">
+            <summary>
+            Obter todos os estados de serviço
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.ProfissionalController.GetProfissionalLogin(BuildingBug.API.Data.Contracts.Profissionais.ProfissionalLoginRequestContract)">
+            <summary>
+            Logar um Profissional
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.ProfissionalController.CreateProfissional(BuildingBug.API.Data.Contracts.Profissionais.CreateProfissionalRequestContract)">
+            <summary>
+            Criar um Profissional
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.ProfissionalController.UpdateProfissional(BuildingBug.API.Data.Contracts.Profissionais.UpdateProfissionalRequestContract)">
+            <summary>
+            Atualizar um Profissional
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.ProfissionalController.DeleteProfissional(System.Int32)">
+            <summary>
+            Eliminar um Profissional
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.ProfissionalController.GetProfissional(System.Int32)">
+            <summary>
+            Obter um Profissional
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.ProfissionalController.GetAllProfissionais">
+            <summary>
+            Obter todos os profissionais
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.ServicoController.CreateServico(BuildingBug.API.Data.Contracts.Servicos.CreateServicoRequestContract)">
+            <summary>
+            Pedir serviço
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.ServicoController.UpdateServico(BuildingBug.API.Data.Contracts.Servicos.UpdateServicoRequestContract)">
+            <summary>
+            Atualizar serviço
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.ServicoController.DeleteServico(System.Int32)">
+            <summary>
+            Eliminar serviço
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.ServicoController.GetServico(System.Int32)">
+            <summary>
+            Obter serviço
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.ServicoController.GetAllServicos">
+            <summary>
+            Obter todos os serviços
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.TipoController.CreateTipo(BuildingBug.API.Data.Contracts.Tipos.CreateTipoRequestContract)">
+            <summary>
+            Criar Tipo
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.TipoController.UpdateTipo(BuildingBug.API.Data.Contracts.Tipos.UpdateTipoRequestContract)">
+            <summary>
+            Atualizar Tipo
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.TipoController.DeleteTipo(System.Int32)">
+            <summary>
+            Eliminar Tipo
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.TipoController.GetTipo(System.Int32)">
+            <summary>
+            Obter Tipo
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.TipoController.GetAllTipos">
+            <summary>
+            Obter todos os Tipos
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.TipoController.GetAllTiposPorCategoria(System.String)">
+            <summary>
+            Obter todos os tipos de uma determinada categoria
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.TipoProfissionalController.CreateTipoProfissional(BuildingBug.API.Data.Contracts.TiposProfissional.CreateTipoProfissionalRequestContract)">
+            <summary>
+            Criar tipo de profissional
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.TipoProfissionalController.DeleteTipoProfissional(System.Int32,System.Int32)">
+            <summary>
+            Eliminar tipo de profissional
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.TipoProfissionalController.GetTipoProfissional(System.Int32,System.Int32)">
+            <summary>
+            Obter tipo de profissional
+            </summary>
+        </member>
+        <member name="M:BuildingBug.API.Controllers.TipoProfissionalController.GetAllTiposProfissional">
+            <summary>
+            Obter todos os tipos de profissional
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,1728 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "BuildingBugAPI",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/v{version}/Cliente/login": {
+      "post": {
+        "tags": [
+          "Cliente"
+        ],
+        "summary": "Logar um cliente.",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/ClienteLoginRequestContract"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Cliente/new": {
+      "post": {
+        "tags": [
+          "Cliente"
+        ],
+        "summary": "Criar um cliente.",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CreateClienteRequestContract"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Cliente/update": {
+      "put": {
+        "tags": [
+          "Cliente"
+        ],
+        "summary": "Atualizar um cliente.",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UpdateClienteRequestContract"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Cliente/delete/{id}": {
+      "delete": {
+        "tags": [
+          "Cliente"
+        ],
+        "summary": "Eliminar um cliente.",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Cliente/{id}": {
+      "get": {
+        "tags": [
+          "Cliente"
+        ],
+        "summary": "Obter um cliente.",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Cliente/all": {
+      "get": {
+        "tags": [
+          "Cliente"
+        ],
+        "summary": "Obter todos os clientes.",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/CodigoPostal/new": {
+      "post": {
+        "tags": [
+          "CodigoPostal"
+        ],
+        "summary": "Criar um código postal",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CreateCodigoPostalRequestContract"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/CodigoPostal/update": {
+      "put": {
+        "tags": [
+          "CodigoPostal"
+        ],
+        "summary": "Atualizar um código postal",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UpdateCodigoPostalRequestContract"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/CodigoPostal/delete/{cp}": {
+      "delete": {
+        "tags": [
+          "CodigoPostal"
+        ],
+        "summary": "Eliminar um código postal",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "cp",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/CodigoPostal/{cp}": {
+      "get": {
+        "tags": [
+          "CodigoPostal"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "cp",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/CodigoPostal/all": {
+      "get": {
+        "tags": [
+          "CodigoPostal"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Deslocacao/new": {
+      "post": {
+        "tags": [
+          "Deslocacao"
+        ],
+        "summary": "Marcar uma Deslocação",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CreateDeslocacaoRequestContract"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Deslocacao/update": {
+      "put": {
+        "tags": [
+          "Deslocacao"
+        ],
+        "summary": "Atualizar uma deslocação",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UpdateDeslocacaoRequestContract"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Deslocacao/delete/{id}": {
+      "delete": {
+        "tags": [
+          "Deslocacao"
+        ],
+        "summary": "Eliminar uma deslocação",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Deslocacao/{id}": {
+      "get": {
+        "tags": [
+          "Deslocacao"
+        ],
+        "summary": "Obter uma deslocação",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Deslocacao/all": {
+      "get": {
+        "tags": [
+          "Deslocacao"
+        ],
+        "summary": "Obter todas as deslocações",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/EstadoServico/new": {
+      "post": {
+        "tags": [
+          "EstadoServico"
+        ],
+        "summary": "Criar um estado de serviço",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CreateEstadoServicoRequestContract"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/EstadoServico/update": {
+      "put": {
+        "tags": [
+          "EstadoServico"
+        ],
+        "summary": "Atualizar um estado de serviço",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UpdateEstadoServicoRequestContract"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/EstadoServico/delete/{id}": {
+      "delete": {
+        "tags": [
+          "EstadoServico"
+        ],
+        "summary": "Eliminar um estado de serviço",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/EstadoServico/{id}": {
+      "get": {
+        "tags": [
+          "EstadoServico"
+        ],
+        "summary": "Obter o estado de serviço",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/EstadoServico/all": {
+      "get": {
+        "tags": [
+          "EstadoServico"
+        ],
+        "summary": "Obter todos os estados de serviço",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Profissional/login": {
+      "post": {
+        "tags": [
+          "Profissional"
+        ],
+        "summary": "Logar um Profissional",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/ProfissionalLoginRequestContract"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Profissional/new": {
+      "post": {
+        "tags": [
+          "Profissional"
+        ],
+        "summary": "Criar um Profissional",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CreateProfissionalRequestContract"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Profissional/update": {
+      "put": {
+        "tags": [
+          "Profissional"
+        ],
+        "summary": "Atualizar um Profissional",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UpdateProfissionalRequestContract"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Profissional/delete/{id}": {
+      "delete": {
+        "tags": [
+          "Profissional"
+        ],
+        "summary": "Eliminar um Profissional",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Profissional/{id}": {
+      "get": {
+        "tags": [
+          "Profissional"
+        ],
+        "summary": "Obter um Profissional",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Profissional/all": {
+      "get": {
+        "tags": [
+          "Profissional"
+        ],
+        "summary": "Obter todos os profissionais",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Servico/new": {
+      "post": {
+        "tags": [
+          "Servico"
+        ],
+        "summary": "Pedir serviço",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CreateServicoRequestContract"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Servico/update": {
+      "put": {
+        "tags": [
+          "Servico"
+        ],
+        "summary": "Atualizar serviço",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UpdateServicoRequestContract"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Servico/delete/{id}": {
+      "delete": {
+        "tags": [
+          "Servico"
+        ],
+        "summary": "Eliminar serviço",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Servico/{id}": {
+      "get": {
+        "tags": [
+          "Servico"
+        ],
+        "summary": "Obter serviço",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Servico/all": {
+      "get": {
+        "tags": [
+          "Servico"
+        ],
+        "summary": "Obter todos os serviços",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Servico/all/{profissionalId}": {
+      "get": {
+        "tags": [
+          "Servico"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "profissionalId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Servico/all/Cliente/{clienteId}": {
+      "get": {
+        "tags": [
+          "Servico"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "clienteId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Servico/all/disponivel": {
+      "get": {
+        "tags": [
+          "Servico"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Servico/aceitar/{profissionalId}/{id}": {
+      "put": {
+        "tags": [
+          "Servico"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "profissionalId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Tipo/new": {
+      "post": {
+        "tags": [
+          "Tipo"
+        ],
+        "summary": "Criar Tipo",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CreateTipoRequestContract"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Tipo/update": {
+      "put": {
+        "tags": [
+          "Tipo"
+        ],
+        "summary": "Atualizar Tipo",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UpdateTipoRequestContract"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Tipo/delete/{id}": {
+      "delete": {
+        "tags": [
+          "Tipo"
+        ],
+        "summary": "Eliminar Tipo",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Tipo/{id}": {
+      "get": {
+        "tags": [
+          "Tipo"
+        ],
+        "summary": "Obter Tipo",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Tipo/all": {
+      "get": {
+        "tags": [
+          "Tipo"
+        ],
+        "summary": "Obter todos os Tipos",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/Tipo/categoria/{categoria}": {
+      "get": {
+        "tags": [
+          "Tipo"
+        ],
+        "summary": "Obter todos os tipos de uma determinada categoria",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "categoria",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/TipoProfissional/new": {
+      "post": {
+        "tags": [
+          "TipoProfissional"
+        ],
+        "summary": "Criar tipo de profissional",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CreateTipoProfissionalRequestContract"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/TipoProfissional/delete": {
+      "delete": {
+        "tags": [
+          "TipoProfissional"
+        ],
+        "summary": "Eliminar tipo de profissional",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "tipoId",
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "query",
+            "name": "profissionalId",
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/TipoProfissional/{tipoId}/{profissionalId}": {
+      "get": {
+        "tags": [
+          "TipoProfissional"
+        ],
+        "summary": "Obter tipo de profissional",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "tipoId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "profissionalId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v{version}/TipoProfissional/all": {
+      "get": {
+        "tags": [
+          "TipoProfissional"
+        ],
+        "summary": "Obter todos os tipos de profissional",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "version",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "ClienteLoginRequestContract": {
+      "required": [
+        "email",
+        "password"
+      ],
+      "type": "object",
+      "properties": {
+        "email": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "password": {
+          "minLength": 1,
+          "type": "string"
+        }
+      }
+    },
+    "CreateClienteRequestContract": {
+      "required": [
+        "apelido",
+        "contacto",
+        "email",
+        "nome",
+        "senha"
+      ],
+      "type": "object",
+      "properties": {
+        "nome": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "apelido": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "email": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "senha": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "contacto": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "CreateCodigoPostalRequestContract": {
+      "type": "object",
+      "properties": {
+        "cp": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "distrito": {
+          "type": "string"
+        }
+      }
+    },
+    "CreateDeslocacaoRequestContract": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "servico_id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "detalhes": {
+          "type": "string"
+        }
+      }
+    },
+    "CreateEstadoServicoRequestContract": {
+      "type": "object",
+      "properties": {
+        "descricao": {
+          "type": "string"
+        }
+      }
+    },
+    "CreateProfissionalRequestContract": {
+      "required": [
+        "apelido",
+        "contacto",
+        "email",
+        "nome",
+        "senha"
+      ],
+      "type": "object",
+      "properties": {
+        "nome": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "apelido": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "email": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "senha": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "contacto": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "CreateServicoRequestContract": {
+      "required": [
+        "clienteId",
+        "codigoPostalCP",
+        "fator",
+        "morada",
+        "tipoId"
+      ],
+      "type": "object",
+      "properties": {
+        "morada": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "fator": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "clienteId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "codigoPostalCP": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "tipoId": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "CreateTipoProfissionalRequestContract": {
+      "type": "object",
+      "properties": {
+        "tipo_id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "profissional_id": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "CreateTipoRequestContract": {
+      "type": "object",
+      "properties": {
+        "descricao": {
+          "type": "string"
+        },
+        "preco": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "fator": {
+          "type": "boolean"
+        },
+        "categoria": {
+          "type": "string"
+        }
+      }
+    },
+    "ProfissionalLoginRequestContract": {
+      "required": [
+        "email",
+        "password"
+      ],
+      "type": "object",
+      "properties": {
+        "email": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "password": {
+          "minLength": 1,
+          "type": "string"
+        }
+      }
+    },
+    "UpdateClienteRequestContract": {
+      "required": [
+        "apelido",
+        "contacto",
+        "nome"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "nome": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "apelido": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "contacto": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "UpdateCodigoPostalRequestContract": {
+      "type": "object",
+      "properties": {
+        "cp": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "distrito": {
+          "type": "string"
+        }
+      }
+    },
+    "UpdateDeslocacaoRequestContract": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "data": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "servico_id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "detalhes": {
+          "type": "string"
+        }
+      }
+    },
+    "UpdateEstadoServicoRequestContract": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "descricao": {
+          "type": "string"
+        }
+      }
+    },
+    "UpdateProfissionalRequestContract": {
+      "required": [
+        "apelido",
+        "contacto",
+        "nome"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "nome": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "apelido": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "contacto": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "UpdateServicoRequestContract": {
+      "required": [
+        "avaliacao",
+        "clienteId",
+        "codigoPostalCP",
+        "custo",
+        "dataFim",
+        "dataInicio",
+        "estadoServicoId",
+        "fator",
+        "id",
+        "morada",
+        "profissionalId",
+        "tipoId"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "morada": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "dataInicio": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "dataFim": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "avaliacao": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "custo": {
+          "format": "float",
+          "type": "number"
+        },
+        "fator": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "clienteId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "estadoServicoId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "codigoPostalCP": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "profissionalId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "tipoId": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "UpdateTipoRequestContract": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "descricao": {
+          "type": "string"
+        },
+        "preco": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "fator": {
+          "type": "boolean"
+        },
+        "categoria": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "Bearer": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header",
+      "description": "Insert Token as: 'Bearer your_token_here'"
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

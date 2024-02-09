@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "confidential": {
+      "type": "secrets"
+    },
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "ApplicationSettings:SQLSettings:ConnectionString",
+      "dynamicId": null
+    },
+    "apis1": {
+      "type": "apis"
+    }
+  }
+}
