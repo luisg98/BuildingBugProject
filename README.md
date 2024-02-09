@@ -1,0 +1,5 @@
+- Aplicação móvel em Kotlin
+- API para suportar aplicação na cloud da Azure
+- Base de Dados para suportar API também em Azure
+- Documentação nomeadamente Project Charter
+- Poster para apresentação final
